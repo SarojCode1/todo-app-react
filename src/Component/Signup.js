@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Signup = () => {
+export const Signup = (props) => {
   return (
-    <div>
+    <div className="Signup">
       <h2>Sign Up</h2>
       <form>
         <label>
@@ -25,7 +25,8 @@ export const Signup = () => {
         </label>
         <button type="submit">Sign Up</button>
       </form>
-      <button type="submit">Already have an account? Sign in here</button>
+      <button onClick={props.onToggleSignup}>
+        Already have an account? Sign in here</button>
 
     </div>
   );

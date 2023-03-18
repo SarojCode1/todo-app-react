@@ -1,8 +1,8 @@
 import React from "react";
-
-export const Login = () => {
+import { Signup } from "./Signup";
+export const Login = (props) => {
     return (
-        <div>
+        <div className=" information">
             <h2>Sign In</h2>
             <form>
 
@@ -13,11 +13,12 @@ export const Login = () => {
 
                 <label>
                     Password:
-                    <input type="password" placeholder="enter password" />
+                    <input type="password" placeholder="enter your password" />
                 </label>
-                <button type="submit">Sign Up</button>
+                <button type="submit">Login</button>
             </form>
-            <button type="submit">Don't have an account? Create here</button>
+            <button onClick={props.onToggleSignup}>
+                Don't have an account? Create here</button>
 
         </div>
 
