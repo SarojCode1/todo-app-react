@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* .form {
   display: flex;
@@ -44,3 +44,66 @@
   align-items: center;
   
 } */
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.Signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Signup button:hover {
+  background-color: #938888;
+}
